@@ -66,6 +66,25 @@
 <!-- Material Dashboard DEMO methods, don't include it in your project! -->
 <script src="<?php echo base_url() ?>/public/assets/js/demo.js"></script>
 
+<script>
+    $(document).ready(function() {
+        function niceAlert(text='test', type='alert'){
+            $.notify({
+                icon: 'notifications_active',
+                message: text
+
+                },{
+                type: type,
+                timer: 4000,
+                placement: {
+                    from: 'top',
+                    align: 'right'
+                }
+            });
+        }
+        niceAlert('Login success', 'success')    });
+</script>
+
 <script type="text/javascript">
     $(document).ready(function() {
         $('#datatables').DataTable({

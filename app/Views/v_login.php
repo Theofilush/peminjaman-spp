@@ -1,146 +1,162 @@
-
 <!doctype html>
 <html lang="en">
-
 <head>
-  <meta charset="utf-8" />
-  <link rel="apple-touch-icon" sizes="76x76" href="public/assets/img/apple-icon.png">
-  <link rel="icon" type="image/png" href="public/assets/img/favicon.png">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-  <title>
-    Be Fullstack Developer
-  </title>
-  <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no' name='viewport' />
-  <!--     Fonts and icons     -->
-  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:400,700|Material+Icons" />
-  <link rel="stylesheet" href="public/assets/css/font-awesome.min.css">
-  <!-- CSS Files -->
-  <link href="public/assets/css/material-dashboard.css?v=2.1.0-12-11-18" rel="stylesheet" />
-  <style type="text/css">
-    body {
-        background: url(public/assets/img/lock.jpg) no-repeat center center fixed;
-        background-size: cover;
-        height: 100%;
-        overflow: hidden;
-    }
-
-    footer.footer nav a, footer.footer div, footer.footer div a{
-        color: white;
-        text-decoration:none;
-    }
-  </style>
+    <meta charset="utf-8" />
+    <link rel="apple-touch-icon" sizes="76x76" href="<?php echo base_url() ?>/public/assets/img/apple-icon.png" />
+    <link rel="icon" type="image/png" href="<?php echo base_url() ?>/public/assets/img/favicon.png" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <title>Material Dashboard PRO by Creative Tim | Premium Bootstrap Admin Template</title>
+    <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
+    <meta name="viewport" content="width=device-width" />
+    <!-- Bootstrap core CSS     -->
+    <link href="<?php echo base_url() ?>/public/assets/css/bootstrap.min.css" rel="stylesheet" />
+    <!--  Material Dashboard CSS    -->
+    <link href="<?php echo base_url() ?>/public/assets/css/material-dashboard.css" rel="stylesheet" />
+    <!--  CSS for Demo Purpose, don't include it in your project     -->
+    <link href="<?php echo base_url() ?>/public/assets/css/demo.css" rel="stylesheet" />
+    <!--     Fonts and icons     -->
+    <link href="<?php echo base_url() ?>/public/assets/css/font-awesome.css" rel="stylesheet" />
+    <link href="<?php echo base_url() ?>/public/assets/css/google-roboto-300-700.css" rel="stylesheet" />
 </head>
 
-<body class="off-canvas-sidebar">
-  <div class="wrapper ">
-      <nav class="navbar navbar-expand-lg navbar-light bg-info">
-    <div class="container">
-        <div class="navbar-translate">
-            <a class="navbar-brand" href="index.php">Be Fullstack Developer</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-                <span class="navbar-toggler-icon"></span>
-                <span class="navbar-toggler-icon"></span>
-            </button>
+<body>
+    <nav class="navbar navbar-primary navbar-transparent navbar-absolute">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navigation-example-2">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
         </div>
-
-        <div class="collapse navbar-collapse justify-content-end">
-            <ul class="navbar-nav">
-                <li class="nav-item">
-                    <a href="https://buku-laravel-vue.com" class="nav-link">
-                    <i class="material-icons">home</i> Back To Home
-                    </a>
-                </li>
-            </ul>
-        </div>
-    </div>
-</nav>
-
-<div class="content">
-    <div class="container-fluid">
-        
-    <div class="row justify-content-center">
-        <div class="col-sm-6 align-self-center">
-            <div class="card card-stats">
-                <div class="card-header card-header-warning card-header-icon">
-                    <div class="card-icon">
-                        <i class="material-icons">lock</i>
-                    </div>
-                    <p class="card-category"></p>
-                    <h3 class="card-title">Authentication <small></small></h3>
-                </div>
-                <div class="card-body">
-                    <form action="index.php" method="post">
-                    <div class="form-group label-floating has-success">
-                        <label class="control-label">Enter your token</label>
-                            <input type="text" name="token" placeholder="..." class="form-control" />
-                        <span class="form-control-feedback">
-                        <i class="material-icons">done</i>
-                        </span>
-                    </div>
-                    <button type="submit" name="login" value="ok" class="btn btn-success">Login</button>
-                    </form>
-                </div>
-                <div class="card-footer">
-                    <div class="stats">
-                        <i class="material-icons text-warning">info</i>
-                        <a href="../">Get more information...</a>
+    </nav>
+    <div class="wrapper wrapper-full-page">
+        <div class="full-page login-page" filter-color="black" data-image="<?php echo base_url() ?>/public/assets/img/login.jpg">
+            <!--   you can change the color of the filter page using: data-color="blue | purple | green | orange | red | rose " -->
+            <div class="content">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-4 col-sm-6 col-md-offset-4 col-sm-offset-3">
+                            <form method="#" action="#">
+                                <div class="card card-login card-hidden">
+                                    <div class="card-header text-center" data-background-color="rose">
+                                        <h4 class="card-title">Login</h4>
+                                        <!-- <div class="social-line">
+                                            <a href="#btn" class="btn btn-just-icon btn-simple">
+                                                Login Admin / Petugas
+                                            </a>
+                                        </div> -->
+                                    </div>
+                                    <!-- <p class="category text-center">
+                                        Atau Login Siswa
+                                    </p> -->
+                                    <div class="card-content">
+                                        <div class="input-group">
+                                            <span class="input-group-addon">
+                                                <i class="material-icons">face</i>
+                                            </span>
+                                            <div class="form-group label-floating">
+                                                <label class="control-label">Username / NISN / NIS</label>
+                                                <input type="text" class="form-control">
+                                            </div>
+                                        </div>
+                                        <div class="input-group">
+                                            <span class="input-group-addon">
+                                                <i class="material-icons">lock_outline</i>
+                                            </span>
+                                            <div class="form-group label-floating">
+                                                <label class="control-label">Password</label>
+                                                <input type="password" class="form-control">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="footer text-center">
+                                        <button type="submit" class="btn btn-rose btn-simple btn-wd btn-lg">Sign in</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
                     </div>
                 </div>
             </div>
+            <footer class="footer">
+                <div class="container">
+                    <nav class="pull-left">
+                        <ul>
+                            <li>
+                                <a href="#">
+                                    Renjana Team
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <p class="copyright pull-right">
+                        &copy;
+                        <script>
+                            document.write(new Date().getFullYear())
+                        </script>
+                        <a href="http://www.creative-tim.com/">Creative Tim</a>, made with love for a better web
+                    </p>
+                </div>
+            </footer>
         </div>
-    </div>        
     </div>
-</div>
-
-<footer class="footer">
-    <div class="container">
-    <nav class="float-left">
-        <ul>
-        <li>
-            <a href="https://www.buku-laravel-vue.com">
-            Be Fullstack Developer Team
-            </a>
-        </li>
-        </ul>
-    </nav>
-    <div class="copyright float-right">
-        &copy;
-        <script>
-        document.write(new Date().getFullYear())
-        </script>, made with <i class="material-icons">favorite</i> by
-        <a href="https://www.creative-tim.com" target="_blank">Creative Tim</a> for a better web.
-    </div>
-    <!-- your footer here -->
-    </div>
-</footer>  </div>
-  <!--   Core JS Files   -->
-  <script src="public/assets/js/core/jquery.min.js" type="text/javascript"></script>
-  <script src="public/assets/js/core/popper.min.js" type="text/javascript"></script>
-  <script src="public/assets/js/core/bootstrap-material-design.min.js" type="text/javascript"></script>
-  <script src="public/assets/js/plugins/perfect-scrollbar.jquery.min.js"></script>
-  <!--  Notifications Plugin    -->
-  <script src="public/assets/js/plugins/bootstrap-notify.js"></script>
-  <!-- Control Center for Material Dashboard: parallax effects, scripts for the example pages etc -->
-  <script src="public/assets/js/material-dashboard.min.js?v=2.1.0" type="text/javascript"></script>
-    <script>
-    $(document).ready(function() {
-        function niceAlert(text='test', type='alert'){
-            $.notify({
-                icon: 'notifications_active',
-                message: text
-
-                },{
-                type: type,
-                timer: 4000,
-                placement: {
-                    from: 'top',
-                    align: 'right'
-                }
-            });
-        }
-            });
-    </script>
 </body>
+
+</body>
+<!--   Core JS Files   -->
+<script src="<?php echo base_url() ?>/public/assets/js/jquery-3.1.1.min.js" type="text/javascript"></script>
+<script src="<?php echo base_url() ?>/public/assets/js/jquery-ui.min.js" type="text/javascript"></script>
+<script src="<?php echo base_url() ?>/public/assets/js/bootstrap.min.js" type="text/javascript"></script>
+<script src="<?php echo base_url() ?>/public/assets/js/material.min.js" type="text/javascript"></script>
+<script src="<?php echo base_url() ?>/public/assets/js/perfect-scrollbar.jquery.min.js" type="text/javascript"></script>
+<!-- Forms Validations Plugin -->
+<script src="<?php echo base_url() ?>/public/assets/js/jquery.validate.min.js"></script>
+<!--  Plugin for Date Time Picker and Full Calendar Plugin-->
+<script src="<?php echo base_url() ?>/public/assets/js/moment.min.js"></script>
+<!--  Charts Plugin -->
+<script src="<?php echo base_url() ?>/public/assets/js/chartist.min.js"></script>
+<!--  Plugin for the Wizard -->
+<script src="<?php echo base_url() ?>/public/assets/js/jquery.bootstrap-wizard.js"></script>
+<!--  Notifications Plugin    -->
+<script src="<?php echo base_url() ?>/public/assets/js/bootstrap-notify.js"></script>
+<!--   Sharrre Library    -->
+<script src="<?php echo base_url() ?>/public/assets/js/jquery.sharrre.js"></script>
+<!-- DateTimePicker Plugin -->
+<script src="<?php echo base_url() ?>/public/assets/js/bootstrap-datetimepicker.js"></script>
+<!-- Vector Map plugin -->
+<script src="<?php echo base_url() ?>/public/assets/js/jquery-jvectormap.js"></script>
+<!-- Sliders Plugin -->
+<script src="<?php echo base_url() ?>/public/assets/js/nouislider.min.js"></script>
+<!--  Google Maps Plugin    -->
+<!--<script src="https://maps.googleapis.com/maps/api/js"></script>-->
+<!-- Select Plugin -->
+<script src="<?php echo base_url() ?>/public/assets/js/jquery.select-bootstrap.js"></script>
+<!--  DataTables.net Plugin    -->
+<script src="<?php echo base_url() ?>/public/assets/js/jquery.datatables.js"></script>
+<!-- Sweet Alert 2 plugin -->
+<script src="<?php echo base_url() ?>/public/assets/js/sweetalert2.js"></script>
+<!--	Plugin for Fileupload, full documentation here: http://www.jasny.net/bootstrap/javascript/#fileinput -->
+<script src="<?php echo base_url() ?>/public/assets/js/jasny-bootstrap.min.js"></script>
+<!--  Full Calendar Plugin    -->
+<script src="<?php echo base_url() ?>/public/assets/js/fullcalendar.min.js"></script>
+<!-- TagsInput Plugin -->
+<script src="<?php echo base_url() ?>/public/assets/js/jquery.tagsinput.js"></script>
+<!-- Material Dashboard javascript methods -->
+<script src="<?php echo base_url() ?>/public/assets/js/material-dashboard.js"></script>
+<!-- Material Dashboard DEMO methods, don't include it in your project! -->
+<script src="<?php echo base_url() ?>/public/assets/js/demo.js"></script>
+<script type="text/javascript">
+    $().ready(function() {
+        demo.checkFullPageBackgroundImage();
+
+        setTimeout(function() {
+            // after 1000 ms we add the class animated to the login/register card
+            $('.card').removeClass('card-hidden');
+        }, 700)
+    });
+</script>
 
 </html>
