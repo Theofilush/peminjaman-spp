@@ -43,8 +43,8 @@
                         <img src="<?php echo base_url() ?>/public/assets/img/faces/avatar.jpg" />
                     </div>
                     <div class="info">
-                        <a> Petugas </a>
-                        <a>Tania Andrew</a>
+                        <a> <?php echo $author; ?> </a>
+                        <a><?php echo $nama; ?></a>
                     </div>
                 </div>
                 <ul class="nav">
@@ -106,7 +106,7 @@
                         <a class="navbar-brand" href="#"> Dashboard </a>
                     </div>
                     <div class="collapse navbar-collapse justify-content-end">
-                    <form class="navbar-form" action="index.php" method="post">
+                    <form class="navbar-form" action="<?php echo base_url(); ?>/logout" method="post">
                         <div class="input-group no-border">
                             <button type="submit" name="logout" value="ok" class="btn btn-danger btn-round">
                                 <i class="material-icons">power_settings_new</i> Logout

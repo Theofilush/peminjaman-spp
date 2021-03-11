@@ -33,8 +33,8 @@
             <div class="collapse navbar-collapse">
                 <ul class="nav navbar-nav navbar-right">
                     <li>
-                        <a href="<?php echo site_url() ?>Login_petugas">
-                            <i class="material-icons">fingerprint</i> Login Petugas
+                        <a href="<?php echo site_url() ?>Login_siswa">
+                            <i class="material-icons">dashboard</i> Dashboard
                         </a>
                     </li>
                 </ul>
@@ -54,7 +54,7 @@
                             <form method="post" action="<?php echo site_url() ?>login/aksi_login">
                                 <div class="card card-login card-hidden">
                                     <div class="card-header text-center" data-background-color="rose">
-                                        <h4 class="card-title">Login</h4>
+                                        <h4 class="card-title">Login Petugas</h4>
                                         <!-- <div class="social-line">
                                             <a href="#btn" class="btn btn-just-icon btn-simple">
                                                 Login Admin / Petugas
@@ -72,6 +72,15 @@
                                             <div class="form-group label-floating">
                                                 <label class="control-label">Username / NISN / NIS</label>
                                                 <input name="username" type="text" class="form-control">
+                                            </div>
+                                        </div>
+                                        <div class="input-group">
+                                            <span class="input-group-addon">
+                                                <i class="material-icons">lock_outline</i>
+                                            </span>
+                                            <div class="form-group label-floating">
+                                                <label class="control-label">Password</label>
+                                                <input name="password" type="password" class="form-control">
                                             </div>
                                         </div>
                                     </div>
